@@ -1,0 +1,5 @@
+#Add this to your bashrc idk
+
+function book {
+cd ~/Documents && ls *.{epub,pdf} | dmenu -l 30 | xargs -I {} zathura '{}'
+}
